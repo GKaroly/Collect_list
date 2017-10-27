@@ -66,12 +66,5 @@ def writeIntoFiles(output, jsonData):
     with open(output, 'w') as outfile:
         json.dump(jsonData, outfile, indent=4, sort_keys=True)
         
-
-def removeEnterCharacterFromString(inputString):
-    if inputString[-1:-2]=="\n":
-        print("ITT")
-    else:
-        print("OTT")
-
 if __name__ == "__main__":
     main()
